@@ -13,7 +13,7 @@ import com.google.protobuf.DescriptorProtos.FieldDescriptorProto.Type;
 import com.home.util.HibernateUtil;
 import com.mysql.cj.jdbc.CallableStatement;
 
-public class CallFunctionClientTest {
+public class CallFunctionClientTest  {
 	
 	public static void main(String[] args) {
 		
