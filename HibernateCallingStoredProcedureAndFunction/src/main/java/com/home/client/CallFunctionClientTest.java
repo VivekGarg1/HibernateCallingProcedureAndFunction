@@ -22,7 +22,7 @@ public class CallFunctionClientTest  {
 			final AtomicReference<Integer> phoneCount=new AtomicReference<>();
 			session.doWork(connection -> {
 				try(CallableStatement callableStatement=(CallableStatement) connection.prepareCall(
-						"{? = call fn_count_phones(?) }")){
+						"{? = call fn_count_phones(?) }")) {
 					callableStatement.registerOutParameter(1,Types.INTEGER);
 					callableStatement.setInt(2, employeeId);
 					callableStatement.execute();
