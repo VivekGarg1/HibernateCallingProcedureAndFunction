@@ -15,7 +15,7 @@ import com.mysql.cj.jdbc.CallableStatement;
 
 public class CallFunctionClientTest  {
 	
-	public static void main(String[] args)  {
+	public static void main(String[] args) {
 		
 		try (Session session=HibernateUtil.getSessionFactory().openSession()){
 			int employeeId=2;
